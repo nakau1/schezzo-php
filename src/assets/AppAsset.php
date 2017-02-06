@@ -6,6 +6,7 @@ use yii\web\View;
 
 /**
  * 基本アセット
+ * Class AppAsset
  * @package app\assets
  */
 class AppAsset extends AssetBundle

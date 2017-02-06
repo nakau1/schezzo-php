@@ -1,23 +1,16 @@
 <?php
-Yii::setAlias('@tests', dirname(__DIR__) . '/tests');
-
 $config = array_merge_recursive(require(__DIR__ . '/common.php'), [
-    'id' => 'pollet-console',
+    'id' => 'schezzo-console',
     'controllerNamespace' => 'app\commands',
+
+    // components
     'components' => [
-        'hulft' => [
-            'class'        => $envConf['mode'] === 'prod'
-                ? 'app\components\Hulft'
-                : 'app\components\HulftDummy',
-            'host'         => $envConf['hulft']['host'] ?? '',
-            'user'         => $envConf['hulft']['user'] ?? '',
-            'identityFile' => $envConf['hulft']['identityFile'] ?? '',
-        ],
+        // enpty
     ],
+
+    // params
     'params' => [
-        'hulftPath' => $envConf['mode'] === 'dev'
-            ? dirname(dirname(__DIR__)) . '/runtime/hulft'
-            : '/var/hulft',
+        // empty
     ],
 ]);
 

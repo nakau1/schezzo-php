@@ -1,13 +1,13 @@
 <?php
-use app\components\Slack;
-
 $config = array_merge_recursive(require(__DIR__ . '/common.php'), [
-    'id'                  => 'pollet-web',
+    'id'                  => 'schezzo-web',
     'controllerNamespace' => 'app\controllers',
-    'components'          => [
-        'request'      => [
+
+    // components
+    'components' => [
+        'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
-            'cookieValidationKey' => 'owq0RvztGJFhFz9-uoO3buZk1j_AhW8Y',
+            'cookieValidationKey' => 'schezzoAppFhFz9-uoO3buZk1j_AhW8Y',
         ],
         'urlManager'   => [
             'enablePrettyUrl' => true,
@@ -15,15 +15,15 @@ $config = array_merge_recursive(require(__DIR__ . '/common.php'), [
             'rules'           => require(__DIR__ . '/routes.php'),
         ],
         'user'         => [
-            'class'           => 'app\components\User',
-            'identityClass'   => 'app\models\PolletUser',
-            'loginUrl'        => ['/'],
+            'class'           => 'yii\web\User',
+            'identityClass'   => 'app\models\User',
+            'loginUrl'        => ['/auth'],
             'enableAutoLogin' => true,
         ],
         'errorHandler' => [
             'errorAction' => 'default/error',
         ],
-        'view'         => [
+        'view' => [
             'class' => '\app\views\View',
         ],
         'assetManager' => [
@@ -32,43 +32,18 @@ $config = array_merge_recursive(require(__DIR__ . '/common.php'), [
                 return hash('md4', $path);
             },
         ],
-        'response'     => [
-            'class'         => 'yii\web\Response',
-            'on beforeSend' => function (\yii\base\Event $event) {
-                /** @var \yii\web\Response $response */
-                $response = $event->sender;
-
-                // エラー時のレスポンスを設定する
-                if ($response->data !== null && !$response->isSuccessful) {
-                    Slack::send(
-                        'Error',
-                        $response->statusText,
-                        implode("\n", [
-                            (isset($response->data['message']) ? $response->data['message'] : ''),
-                            'Stack Trace',
-                            Yii::$app->errorHandler->exception->getTraceAsString(),
-                        ])
-                    );
-                }
-            },
+        'response' => [
+            'class' => 'yii\web\Response',
         ],
     ],
-    'modules'             => [
+    'modules' => [
         // API
-        'api'      => [
+        'api' => [
             'class' => 'app\modules\api\Module',
         ],
         // admin
-        'admin'    => [
+        'admin' => [
             'class' => 'app\modules\admin\Module',
-        ],
-        // worker
-        'worker'   => [
-            'class' => 'app\modules\worker\Module',
-        ],
-        // 交換API
-        'exchange' => [
-            'class' => 'app\modules\exchange\Module',
         ],
     ],
 ]);

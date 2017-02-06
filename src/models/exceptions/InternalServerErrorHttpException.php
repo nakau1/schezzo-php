@@ -1,20 +1,19 @@
 <?php
-
 namespace app\models\exceptions;
 
-use yii\web\HttpException;
-
 /**
- * Class InternalServerErrorHttpException
+ * Internal Server Error
  * @package app\models\exceptions
  */
 class InternalServerErrorHttpException extends HttpException
 {
-    public function __construct($message = null, $code = 0, \Exception $previous = null)
+    protected function fixedMessage() : string
     {
-        if (!$message) {
-            $message = "サーバーエラーが発生しました。\nもう一度操作をやり直してください。";
-        }
-        parent::__construct(400, $message, $code, $previous);
+        return 'サーバエラーが発生しました';
+    }
+
+    protected function fixedStatusCode() : int
+    {
+        return 500;
     }
 }
