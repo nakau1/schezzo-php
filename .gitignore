@@ -33,7 +33,6 @@ phpunit.phar
 !/runtime/.gitkeep
 
 # Vagrant
-Vagrantfile
 .vagrant/
 /vagrant
 
