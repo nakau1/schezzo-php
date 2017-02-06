@@ -1,0 +1,30 @@
+---
+#- name: be sure all existing packages are updated
+#  yum: name=* state=latest
+
+- yum: name=MySQL-python state=present enablerepo=epel
+
+- name: Check if selinux is installed
+  command: getenforce
+  register: command_result
+  ignore_errors: True
+
+- name: Install libselinux-python
+  yum: name={{ item }}
+  with_items:
+    - epel-release
+    - libselinux-python
+  when: command_result|success and command_result.stdout != 'Disabled'
+
+- name: Bash path setting script
+  script: ../scripts/bash-setting.sh
+
+- name: Composer install scripts
+  script: ../scripts/install-composer.sh creates=/usr/local/bin/composer
+
+- name: Install Other Packages
+  yum: name={{ item }} state=present
+  with_items:
+    - memcached
+    - memcached-devel
+  tags: common-packages

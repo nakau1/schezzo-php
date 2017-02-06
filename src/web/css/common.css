@@ -1,0 +1,1791 @@
+@charset "utf-8";
+body {
+    color: #666666;
+    background: #ffffff;
+    font-family: "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+}
+
+form {
+    -webkit-tap-highlight-color: transparent;
+}
+
+.body_bggray {
+    background: #f0f0f0;
+}
+
+.ico_unread {
+    background: #e60012;
+    color: #ffffff;
+    font-size: 1.0rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 2.0em;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+}
+
+.head_mail .ico_unread {
+    position: absolute;
+    top: 5px;
+    right: 7px;
+}
+
+.menu_list .ico_unread {
+    position: absolute;
+    top: 15px;
+    left: 29px;
+}
+
+.btn_red a {
+    display: block;
+    background-color: #e60012;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+.btn_gray a, .btn_gray span {
+    display: block;
+    background-color: #d3d3d3;
+    color: #666666;
+    border-radius: 5px;
+}
+
+.btn_common a, .btn_common span {
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 12px 0;
+}
+
+.btn_terms a {
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 12px 0;
+    color: #e60012;
+}
+
+.btn_begin a {
+    text-align: center;
+    font-size: 1.8rem;
+    padding: 12px 0;
+}
+
+.btn_login a {
+    background: url(../img/ico_login_white.png) no-repeat 10px center #e60012;
+    background-size: 20px auto;
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 12px 0;
+}
+
+.btn_next a {
+    background: url(../img/ico_next_white.png) no-repeat 10px center #e60012;
+    background-size: 20px auto;
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 12px 0;
+}
+
+.btn_plus a {
+    background: url(../img/ico_plus_white.png) no-repeat 10px center #e60012;
+    background-size: 20px auto;
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 12px 0;
+}
+
+.btn_contact a {
+    background: url(../img/ico_contact.png) no-repeat 15px 10px #e60012;
+    background-size: 32px auto;
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 12px 0;
+}
+
+.btn_loading a, .btn_loading span {
+    background: url(../img/loading03.gif) no-repeat center #d3d3d3;
+    background-size: 24px auto;
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 12px 0;
+}
+
+.btn_disabled a, .btn_disabled span {
+    color: #a8a8a8;
+}
+
+.main_box {
+    padding: 0 10px;
+}
+
+.h_box {
+    background: url(../img/bg_h_box.png) no-repeat left bottom #ffffff;
+    background-size: 100% auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    margin: 0 0 20px;
+}
+
+.h_box p {
+    color: #666666;
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 10px 0 20px;
+}
+
+.h_box .btn_back {
+    position: absolute;
+    top: -10px;
+    left: 0px;
+}
+
+.h_box .btn_back a {
+    display: block;
+    padding: 12px 30px 8px 10px;
+}
+
+.h_box .btn_back img {
+    width: 10px;
+    height: auto;
+}
+
+.h_input {
+    color: #666666;
+    font-weight: bold;
+    font-size: 1.6rem
+}
+
+.input_style {
+    color: #8c8c8c;
+    border: 1px solid #dddddd;
+    font-size: 1.8rem;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 10px 0;
+    padding: 10px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #ffffff;
+}
+
+.cedyna-id-piece {
+    color: #8c8c8c;
+    border: 1px solid #dddddd;
+    font-size: 1.8rem;
+    width: 25%;
+    box-sizing: border-box;
+    margin: 10px 0;
+    padding: 10px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #ffffff;
+}
+
+.input_style_noborder {
+    color: #8c8c8c;
+    font-size: 1.8rem;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #ffffff;
+    height: 30px;
+}
+
+.textarea_style {
+    color: #8c8c8c;
+    border: 1px solid #dddddd;
+    font-size: 1.4rem;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 10px 0;
+    padding: 10px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #ffffff;
+}
+
+.checkbox_style {
+    border: 1px solid #dddddd;
+}
+
+label {
+    font-size: 1.4rem;
+}
+
+.conf_text {
+    color: #8c8c8c;
+    font-size: 1.6rem;
+    margin: 5px 0 0 0;
+}
+
+.read_box {
+    line-height: 1.8em;
+    margin: 0 0 50px 1rem;
+}
+
+.read_box h2 {
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: #7ca445;
+    border-bottom: 1px solid #7ca445;
+    padding: 0 0 10px;
+    margin: 0 0 10px;
+}
+
+.read_box h3 {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 0 0 5px;
+}
+
+.read_box p {
+    margin: 0 0 20px;
+    font-size: 1.2rem;
+}
+
+.err_text {
+    color: #e60012;
+    background: #FFCECE;
+    border: 1px solid #e60012;
+    padding: 12px 10px;
+    font-size: 1.4rem;
+}
+
+.text_notice {
+    font-size: 1.4rem;
+}
+
+/*----TEXT----*/
+.text_red {
+    color: #e60012;
+}
+
+.text_s {
+    font-size: 1.2rem;
+    line-height: 1.6em;
+}
+
+.text_ss {
+    font-size: 1.0rem;
+}
+
+/*----header----*/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    z-index: 996;
+}
+
+.pollet_logo {
+    text-align: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.pollet_logo img {
+    width: 60px;
+    height: auto;
+}
+
+.head_mail {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+.ico_head_mail img {
+    width: 24px;
+    height: auto;
+    margin: 10px 14px 0 0;
+}
+
+/*----Menu----*/
+.menu_box {
+    border-top: 1px solid #f0f0f0;
+    padding: 0 10px;
+    background: #ffffff;
+}
+
+.menu_list li a {
+    display: block;
+    padding: 20px 0 20px 50px;
+    font-size: 1.4rem;
+    border-bottom: 1px solid #dddddd;
+    color: #666666;
+}
+
+.menu_details a {
+    background: url(../img/ico_details.png) no-repeat 12px center;
+    background-size: auto 23px;
+}
+
+.menu_point a {
+    background: url(../img/ico_point.png) no-repeat 11px center;
+    background-size: auto 25px;
+}
+
+.menu_charge a {
+    background: url(../img/ico_charge.png) no-repeat 8px center;
+    background-size: auto 28px;
+}
+
+.menu_guide a {
+    background: url(../img/ico_guide.png) no-repeat 10px center;
+    background-size: auto 25px;
+}
+
+.menu_setting a {
+    background: url(../img/ico_setting.png) no-repeat 9px center;
+    background-size: auto 27px;
+}
+
+.menu_mail a {
+    background: url(../img/ico_mail.png) no-repeat 9px center;
+    background-size: auto 18px;
+    position: relative;
+}
+
+.menu_logout a {
+    background: url(../img/ico_logout.png) no-repeat 10px center;
+    background-size: auto 25px;
+}
+
+/*----index.html----*/
+.card_box {
+    margin: 0px 10px 20px;
+    height: 225px;
+    position: relative;
+}
+
+.card_box_inner {
+    padding: 0 0 20px
+}
+
+.after_activating .card_box {
+    background: url(../img/bgt_card.png) no-repeat left top;
+    background-size: 100% auto;
+}
+
+.after_activating .card_box_inner {
+    background: url(../img/bgb_card.png) no-repeat left bottom;
+    background-size: 100% auto;
+}
+
+.before_activating .card_box {
+    background: url(../img/bgt_card_gray.png) no-repeat left top;
+    background-size: 100% auto;
+}
+
+.before_activating .card_box_inner {
+    background: url(../img/bgb_card_gray.png) no-repeat left bottom;
+    background-size: 100% auto;
+}
+
+.graph {
+    margin: 23px 0 0 15px;
+    background-size: 95% auto;
+}
+
+.balance_box {
+    position: absolute;
+    top: 79px;
+    left: 58px;
+    font-size: 1.0rem;
+    width: 95px;
+}
+
+.balance_box_center {
+    position: absolute;
+    top: 92px;
+    left: 58px;
+    font-size: 1.0rem;
+    width: 95px;
+}
+
+.balance_loading_image {
+    margin-top: 10px;
+}
+
+.balance_price {
+    text-align: right;
+}
+
+.balance_price span {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.btn_reload a {
+    border: 1px solid #666666;
+    border-radius: 5px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    color: #666666;
+    text-align: center;
+    display: block;
+}
+
+.card_btn_box {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 150px;
+    font-size: 1.4rem;
+    line-height: 2em;
+}
+
+.start_box {
+    background: url(../img/bg_start.png) no-repeat 35px 20px;
+    background-size: 70px auto;
+    margin: 40px 0 0 0;
+}
+
+.start_box > a {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.start_box_text {
+    position: absolute;
+    font-size: 1.0rem;
+    line-height: 1.4em;
+    right: 0;
+    bottom: 15px;
+    width: 160px;
+}
+
+.make_box {
+    background: url(../img/bg_make.png) no-repeat 32px 20px;
+    background-size: 70px auto;
+    margin: 40px 0 0 0;
+}
+
+.make_box > a {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.btn_charge a {
+    background-image: url(../img/ico_plus_white.png);
+    background-repeat: no-repeat;
+    background-position: 15px center;
+    background-size: 20px auto;
+    padding: 13px 0 13px 40px;
+    margin: 90px 10px 0 0;
+}
+
+.btn_chargelist a {
+    background-image: url(../img/ico_time_red.png);
+    background-repeat: no-repeat;
+    background-position: 5px center;
+    background-size: 20px auto;
+    padding: 5px 0 5px 30px;
+    margin: 60px 10px 0 0;
+    color: #e60012;
+    border: 3px solid #e60012;
+    box-sizing: border-box;
+    border-radius: 5px;
+    display: block;
+}
+
+.btn_before a {
+    padding: 3px 0;
+    text-align: center;
+    margin: 90px 10px 0 0;
+    font-size: 1.6rem;
+}
+
+.site_box {
+    background: #f0f0f0;
+    padding: 10px;
+}
+
+.btn_until_card a {
+    border: 1px solid #d3d3d3;
+    display: block;
+    background-color: #ffffff;
+    color: #666666;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.btn_until_card span {
+    background: url(../img/arrw_gray_m.png) no-repeat right 3px;
+    background-size: 8px auto;
+    padding: 0 20px 0 0;
+}
+
+.site_add {
+    width: 92%;
+    position: relative;
+    margin: 30px 0 30px 20px;
+}
+
+.site_add div.site_add_inner {
+    padding: 0 0 0 10px;
+}
+
+.site_add div.site_rogo_img {
+    width: inherit;
+    height: 50px;
+}
+
+.site_add img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto 0;
+}
+
+.site_add_text {
+    margin: 15px 0 0 0;
+    color: #666666;
+    font-size: 1.0rem;
+}
+
+.site_add_price {
+    color: #e60012;
+    font-size: 1.2rem;
+}
+
+.site_add_price span {
+    font-size: 1.6rem;
+}
+
+button {
+    width: auto;
+    padding: 0;
+    margin: 0;
+    background: none;
+    border: 0;
+    font-size: 0;
+    line-height: 0;
+    overflow: visible;
+    cursor: pointer;
+}
+
+.slick-prev {
+    position: absolute;
+    left: -20px;
+    top: 0px;
+    background: url(../img/ico_back.png) no-repeat left center;
+    background-size: 18px auto;
+    width: 18px;
+    height: 18px;
+    padding: 53px 0;
+    z-index: 1;
+}
+
+.slick-next {
+    position: absolute;
+    right: -10px;
+    top: 0px;
+    background: url(../img/ico_next.png) no-repeat right center;
+    background-size: 18px auto;
+    width: 18px;
+    height: 18px;
+    padding: 53px 0;
+    z-index: 2;
+}
+
+.chargelist_box {
+    position: fixed;
+    top: 66px;
+    left: 10px;
+    margin: 10px;
+    display: none;
+}
+
+.chargelist_box_inner {
+    width: 190px;
+    height: 335px;
+    overflow: hidden;
+    border-radius: 5px;
+    background: #ffffff;
+}
+
+.bg_top_chargelist {
+    width: 12px;
+    height: auto;
+    position: absolute;
+    right: -11px;
+    top: 64px;
+}
+
+.chargelist_box_head {
+    background: #b8d447;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1.4rem;
+}
+
+.chargelist_box table {
+    width: 100%;
+}
+
+.chargelist_box tr:nth-child(even) {
+    background: #f0f0f0;
+}
+
+.chargelist_box_logo {
+    padding: 10px;
+    width: 50px;
+}
+
+.chargelist_box_logo img {
+    width: 50px;
+    height: auto;
+}
+
+.chargelist_box_text {
+    padding: 10px 10px 0 0;
+    vertical-align: top;
+}
+
+.chargelist_box_text .chargelist_box_time {
+    background: url(../img/ico_time.png) no-repeat 3px center #f39800;
+    background-size: 12px auto;
+    display: inline-block;
+    border-radius: 50px;
+    padding: 2px 10px 2px 20px;
+    margin: 0 0 3px;
+    color: #ffffff;
+    font-size: 1.0rem;
+}
+
+.chargelist_box_text .chargelist_box_name {
+    display: block;
+    font-size: 1.2rem;
+    margin: 0 0 3px;
+}
+
+.chargelist_box_text .chargelist_box_price {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#modal-content {
+    margin: 0;
+    position: fixed;
+    display: none;
+    z-index: 100;
+}
+
+#modal-overlay {
+    z-index: 99;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120%;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.chargelist_box_table {
+    overflow: scroll;
+    height: 295px;
+}
+
+.top_box {
+    width: 100%;
+}
+
+/*----start.html----*/
+.img_top_main {
+    text-align: center;
+    margin: 15px 0 40px;
+}
+
+.img_top_main img {
+    width: 360px;
+    height: auto;
+}
+
+.btn_login_red a {
+    background: url(../img/ico_login_red.png) no-repeat left center;
+    background-size: 20px auto;
+    color: #e60012;
+    font-weight: bold;
+    font-size: 1.8rem;
+    width: 140px;
+    padding: 5px 0 5px 25px;
+}
+
+/*----issuance/index----*/
+.text_start_issuance {
+    font-size: 1.6rem;
+    padding: 0 15px;
+}
+
+.issuance_term_modal {
+    padding: 20px 5px;
+}
+
+.card_terms_box {
+    overflow: scroll;
+    height: 400px;
+}
+
+.card_terms_box::-webkit-scrollbar {
+    width: 6px;
+    height: 0;
+}
+
+.card_terms_box::-webkit-scrollbar-thumb {
+    background: #bbbbbb;
+    border-radius: 3px;
+}
+
+/*----issuance/reception----*/
+.img_card_comp img {
+    width: 170px;
+    height: auto;
+    margin: 50px 0 70px;
+}
+
+.text_card_comp {
+    text-align: left;
+    font-size: 1.6rem;
+}
+
+/*----point_site.html----*/
+.point_site_name {
+    text-align: center;
+    font-size: 2.0rem;
+    font-weight: bold;
+    margin: 30px 0 0 0;
+}
+
+.point_site_rogo {
+    text-align: center;
+    margin: 60px 0;
+}
+
+.point_site_rogo img {
+    width: 100px;
+    height: auto;
+}
+
+.point_site_text_box {
+    background: #ffffff;
+    border-radius: 5px;
+    padding: 25px;
+    font-size: 1.2rem;
+    line-height: 1.8em;
+    margin: 0 0 40px;
+}
+
+/*----charge.html----*/
+.charge_balance_box {
+    background: #ffffff;
+    border-radius: 5px;
+    padding: 18px 15px 13px;
+    margin: 40px 0 40px;
+}
+
+.charge_balance_text {
+    font-weight: bold;
+    font-size: 1.6rem;
+    float: left;
+}
+
+.charge_balance_price {
+    font-size: 1.4rem;
+    float: right;
+}
+
+.charge_balance_price span {
+    font-weight: bold;
+    font-size: 2.2rem;
+}
+
+.charge_price_box {
+    background: #ffffff;
+    border: 1px solid #dddddd;
+    text-align: right;
+    padding: 6px 10px;
+    margin: 0 0 10px;
+    font-size: 1.6rem;
+}
+
+.ico_closs {
+    width: 25px;
+    height: 25px;
+    padding: 3px;
+    float: left;
+}
+
+.charge_price_box input {
+    width: 80%;
+    text-align: right;
+}
+
+.btn_charge_price {
+    width: 31.3%;
+    float: left;
+    margin: 0 3% 0 0;
+    word-break: keep-all;
+}
+
+.btn_charge_price:last-child {
+    margin: 0;
+}
+
+.btn_charge_price a {
+    background: url(../img/ico_plus_white.png) no-repeat 12px center #e60012;
+    background-size: 15px auto;
+    font-size: 1.6rem;
+    padding: 10px 10px 10px 36px;
+}
+
+.charge_details_box {
+    background: #ffffff;
+    border: 1px solid #dddddd;
+    padding: 10px 10px;
+    margin: 0 0 10px;
+    font-size: 1.6rem;
+}
+
+.charge_details_box .charge_details_text {
+    float: left;
+    font-weight: bold;
+}
+
+.charge_details_box .charge_details_price {
+    float: right;
+}
+
+.charge_total_box {
+    background: #ffffff;
+    border: 1px solid #e60012;
+    border-radius: 5px;
+    padding: 18px 10px 16px;
+    margin: 50px 0 20px;
+    font-size: 1.6rem;
+}
+
+.charge_total_text {
+    float: left;
+    font-weight: bold;
+    margin: 5px 0 0 0;
+}
+
+.charge_total_price {
+    float: right;
+}
+
+.charge_total_price span {
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin: 0 8px 0 0;
+}
+
+.fancybox-custom .fancybox-outer {
+    box-shadow: 0 0 50px #222;
+}
+
+.img_charg_site_rogo img {
+    width: 60px;
+    height: auto;
+}
+
+.img_charge_pollet {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.img_charge_pollet_arrow {
+    width: 5%;
+}
+
+.img_charge_pollet_card {
+    width: 55%;
+}
+
+.charg_price_comf_text {
+    text-align: center;
+    border: 1px solid #dddddd;
+    padding: 15px 10px;
+    border-radius: 5px;
+    margin: 40px 0 15px;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.charg_price_comf_text span {
+    font-size: 2.4rem;
+}
+
+/*----charge_card.html----*/
+.charge_card_box {
+    padding: 18px 15px 30px;
+    margin: 20px 0 40px;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.charge_card_box_ico {
+    float: left;
+    width: 50%;
+    text-align: left;
+}
+
+.charge_card_box_ico img {
+    height: auto;
+    max-width: 95%;
+}
+
+.charge_card_box_float {
+    float: right;
+    text-align: right;
+    width: 50%;
+}
+
+.charge_card_box_text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 0 3px;
+}
+
+.charge_card_box_price {
+    font-size: 1.4rem;
+}
+
+.charge_card_box_price span {
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin: 0 8px 0 0;
+}
+
+.img_charg_arrw img {
+    width: 15px;
+    height: auto;
+}
+
+.img_charg_card img {
+    width: 170px;
+    height: auto;
+}
+
+.charge_card_list_box {
+    margin: 20px 0 5px;
+    text-align: center;
+}
+
+.charge_card_list_box_inner {
+    border: 2px solid #cccccc;
+    border-radius: 5px;
+    font-size: 1.4rem;
+}
+
+.charge_card_list_box table {
+    width: 100%;
+}
+
+.charge_card_list_box table tr {
+    border-bottom: 1px solid #cccccc;
+}
+
+.charge_card_list_box table tr th {
+    padding: 6px 10px;
+    text-align: left;
+    font-weight: normal;
+}
+
+.charge_card_list_box table tr.tr_increase th {
+    background: url(../img/ico_plus_red.png) no-repeat 8px center;
+    background-size: 14px auto;
+    padding: 0 0 0 25px;
+}
+
+.charge_card_list_box table tr td {
+    padding: 6px 10px 6px 0;
+    text-align: right;
+}
+
+.charge_card_list_box table tr.tr_increase {
+    color: #e60012;
+}
+
+.charge_card_list_box table tr.tr_total {
+    font-weight: bold;
+    background: #f0f0f0;
+    border: none;
+}
+
+.bg_charg_card {
+    position: relative;
+    top: -2px;
+    width: 20px;
+    height: auto;
+}
+
+/*----details.html----*/
+.details_head {
+    text-align: center;
+    width: 100%;
+    margin: 20px auto;
+}
+
+.details_head_text {
+    font-size: 2.0rem;
+    font-weight: bold;
+    display: inline-block;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.details_head_arrw {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.details_head_arrw a {
+    display: block;
+}
+
+.details_head_arrw img {
+    width: 10px;
+    height: auto;
+    margin: 18px 10px 20px;
+}
+
+.details_table {
+    width: 100%;
+    background: #ffffff;
+    margin: 0 0 50px;
+}
+
+.details_table tr:nth-child(odd) {
+    background: #f0f0f0;
+}
+
+.details_table td.day_td {
+    font-size: 1.2rem;
+    width: 40px;
+    text-align: right;
+    vertical-align: middle;
+    padding: 0 10px 0 0;
+}
+
+.details_table td.shop_td {
+    font-size: 1.2rem;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.details_table td.price_td {
+    font-size: 1.0rem;
+    text-align: right;
+    padding: 0px 15px 0 10px;
+    width: 70px;
+    height: 50px;
+    vertical-align: middle;
+}
+
+.details_table td.price_td span {
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+.details_table .charg_tr {
+    color: #e60012;
+    background: #fff5e1 !important;
+}
+
+/*----pollet_point.html----*/
+.details_table td.point_td {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: right;
+    padding: 0px 15px 0 10px;
+    width: 70px;
+    height: 50px;
+    vertical-align: middle;
+}
+
+.property_point_box {
+    border: 1px solid #e60012;
+    border-radius: 50px;
+    padding: 10px 40px;
+    margin: 0px auto 50px;
+    width: 220px;
+}
+
+.property_point_text {
+    font-size: 1.4rem;
+    float: left;
+    margin: 6px 0 0 0;
+}
+
+.property_point_price {
+    font-size: 1.6rem;
+    float: right;
+    font-weight: bold;
+    color: #e60012;
+}
+
+.property_point_price span {
+    font-size: 2.4rem;
+}
+
+/*----charge_means.html----*/
+.charge_means_box {
+    border: 1px solid #dddddd;
+    margin: 0 0 18px 0;
+    background: url(../img/bg_charge_means_box.png) no-repeat right center #ffffff;
+    background-size: 22px auto;
+}
+
+.charge_means_box a {
+    padding: 28px 10px 0px 0px;
+    display: block;
+    height: 90px;
+}
+
+.charge_means_box:last-child {
+    margin: 0 0 50px;
+}
+
+.charge_means_rogo {
+    float: left;
+    width: 100px;
+    text-align: center;
+}
+
+.charge_means_rogo img {
+    width: 60px;
+    height: auto;
+}
+
+.charge_means_text_box {
+    float: left;
+    width: 230px;
+}
+
+.charge_means_text_box img {
+    width: 35px;
+    height: auto;
+    margin: 0 15px;
+}
+
+.charge_means_sitename {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #666666;
+}
+
+.charge_means_point_text {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #666666;
+    margin: 10px 0 0 0;
+}
+
+.charge_means_point_text span {
+    font-size: 2.0rem;
+}
+
+.charge_means_fancybox .point_site_name {
+    text-align: center;
+    font-size: 2.0rem;
+    font-weight: bold;
+    margin: 5px 0 0 0;
+}
+
+.charge_means_fancybox .point_site_rogo {
+    text-align: center;
+    margin: 25px 0;
+}
+
+.charge_means_fancybox .point_site_rogo img {
+    width: auto;
+    height: 90px;
+}
+
+.charge_means_fancybox .fancybox_site_text_box {
+    padding: 0 5px;
+    font-size: 1.2rem;
+    line-height: 1.8em;
+    margin: 0 0 20px;
+}
+
+.charge_means_fancybox .property_point_box {
+    padding: 10px 20px;
+    margin: 0px auto 20px;
+    width: 200px;
+}
+
+.charge_means_fancybox .property_point_text {
+    font-size: 1.2rem;
+    float: left;
+    margin: 6px 0 0 0;
+}
+
+.charge_means_fancybox .property_point_price {
+    font-size: 1.4rem;
+}
+
+.charge_means_fancybox .property_point_price span {
+    font-size: 1.8rem;
+}
+
+.ico_arrw_red {
+    width: 15px;
+    height: auto;
+    margin: 0 5px;
+    position: relative;
+    top: -3px;
+}
+
+/*----guide.html----*/
+.guide_box {
+    border: 1px solid #dddddd;
+    background: #ffffff;
+    margin: 0 0 18px;
+}
+
+.guide_box:last-child {
+    margin: 0 0 50px;
+}
+
+.guide_box_h {
+    color: #ffffff;
+    background: #b8d447;
+    padding: 12px 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.guide_box_link a {
+    background: url(../img/ico_arrw_gray02.png) no-repeat 335px center;
+    background-size: 10px auto;
+    display: block;
+    padding: 15px;
+    font-size: 1.5rem;
+    color: #666666;
+    border-bottom: 1px solid #dddddd;
+}
+
+.guide_box_link:last-child a {
+    border: none;
+}
+
+.guide_box_text {
+    padding: 15px;
+    font-size: 1.2rem;
+}
+
+/*----contact_comp.html----*/
+.contact_comp_h {
+    color: #7ca445;
+    font-size: 2.0rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 40px 0 0 0;
+}
+
+/*----setting.html----*/
+.btn_setting {
+    margin: 0 0 8px;
+}
+
+.btn_setting:last-child {
+    margin: 0 0 50px;
+}
+
+.btn_setting a {
+    display: block;
+    border: 1px solid #dddddd;
+    padding: 20px 15px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    background: url(../img/arrw_gray_m.png) no-repeat 335px center #ffffff;
+    background-size: 8px auto;
+    color: #666666;
+}
+
+.btn_01 span {
+    background: url(../img/ico_setting01.png) no-repeat 1px center;
+    background-size: 18px auto;
+    padding: 5px 0 5px 30px;
+}
+
+.btn_02 span {
+    background: url(../img/ico_setting02.png) no-repeat 0px center;
+    background-size: 22px auto;
+    padding: 5px 0 5px 30px;
+}
+
+.btn_03 span {
+    background: url(../img/ico_setting03.png) no-repeat 1px center;
+    background-size: 18px auto;
+    padding: 5px 0 5px 30px;
+}
+
+/*----info_list.html----*/
+.info_list_box dl {
+    border-bottom: 1px solid #dddddd;
+    padding: 20px;
+}
+
+.info_list_box dt {
+    font-size: 1.2rem;
+}
+
+.info_list_box dd {
+    font-size: 1.2rem;
+    line-height: 1.6em;
+    font-weight: bold;
+}
+
+.info_list_box dd a {
+    color: #666666;
+}
+
+.info_list_box dl:last-child {
+    border-bottom: none;
+    margin: 0 0 30px;
+}
+
+.info_list_box .ico_unread {
+    display: inline-block;
+    position: relative;
+    top: -4px;
+    margin: 0 0 0 2px;
+}
+
+/*----info_page.html----*/
+.info_page_head {
+    border-bottom: 1px solid #dddddd;
+    padding: 20px 20px 30px;
+    margin: 0 0 30px;
+}
+
+.info_page_head p {
+    font-size: 1.2rem;
+}
+
+.info_page_head h1 {
+    font-size: 1.2rem;
+    line-height: 1.8em;
+    font-weight: bold;
+}
+
+.info_page_box {
+    padding: 0 20px 50px;
+}
+
+.info_page_box p {
+    font-size: 1.2rem;
+    line-height: 1.8em;
+    margin: 0 0 20px;
+}
+
+/*----tutorial.html----*/
+.tutorial_box {
+    line-height: 1.8em;
+    margin: 0 0 50px;
+}
+
+.tutorial_box h2 {
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: #7ca445;
+    border: 1px solid #7ca445;
+    padding: 10px;
+    margin: 0 0 15px;
+}
+
+.tutorial_box_inner {
+    margin: 0 10px 50px;
+}
+
+.tutorial_box h3 {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 0 0px 5px;
+}
+
+.tutorial_box p {
+    margin: 0 0px 20px;
+    font-size: 1.2rem;
+}
+
+.tutorial_box img {
+    width: 100%;
+    height: auto;
+}
+
+/*----modal_box----*/
+.modal_box {
+    width: 100%;
+    max-width: 340px;
+    position: absolute;
+    display: none;
+    z-index: 998;
+    top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+.modal_tutorial_box {
+    overflow: hidden;
+    margin: 0 20px;
+    position: relative;
+}
+
+.img_tutorial {
+    width: 100%;
+    height: auto;
+}
+
+.btn_modal_close a {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    display: block;
+    padding: 14px;
+}
+
+.btn_modal_close a img {
+    width: 14px;
+    height: auto;
+}
+
+.modal_tutorial_next {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    margin-top: auto;
+    margin-bottom: auto;
+    top: 0;
+    bottom: 66px;
+    right: 0;
+}
+
+.modal_box .modal_box_inner .btn_last a {
+    width: 100%;
+    height: 65px;
+    position: relative;
+    left: 0px;
+    bottom: 65px;
+    z-index: 99;
+    display: block;
+}
+
+/*----visa_prepaid----*/
+.img_about_prepaid {
+    text-align: center;
+    margin: 30px 25px;
+}
+
+.img_about_prepaid img {
+    width: 100%;
+    height: auto;
+}
+
+.about_prepaid01 {
+    background: #e60012;
+    padding: 0 0 13px;
+}
+
+.about_prepaid02 {
+    background: #f39800;
+    padding: 0 0 13px;
+}
+
+.about_prepaid03 {
+    background: #fdd000;
+    padding: 0 0 13px;
+}
+
+.about_prepaid04 {
+    background: #f7ea76;
+    padding: 0 0 13px;
+}
+
+.about_prepaid05 {
+    background: #b8d447;
+    padding: 0 0 13px;
+}
+
+.about_prepaid_dl {
+    color: #ffffff;
+}
+
+.about_prepaid04 .about_prepaid_dl {
+    color: #817403;
+}
+
+.about_prepaid_dl dt {
+    float: left;
+    border-right: 1px solid #ffffff;
+    padding: 13px 0px;
+    font-size: 4.2rem;
+    width: 25%;
+    text-align: center;
+}
+
+.about_prepaid_dl dd {
+    float: right;
+    font-size: 1.6rem;
+    width: 70%;
+}
+
+.about_prepaid01 .about_prepaid_dl dd,
+.about_prepaid02 .about_prepaid_dl dd {
+    padding: 20px 0px 0px;
+}
+
+.about_prepaid03 .about_prepaid_dl dd,
+.about_prepaid04 .about_prepaid_dl dd,
+.about_prepaid05 .about_prepaid_dl dd {
+    padding: 30px 0px 0px;
+}
+
+.about_prepaid_img_box {
+    margin: 0px 10px;
+    padding: 20px 15px 15px;
+    border-radius: 10px;
+    background: #ffffff;
+    font-size: 1.2rem;
+}
+
+.about_prepaid_img_box img {
+    width: 100%;
+    height: auto;
+    margin: 0 0 15px;
+}
+
+/*----card_details----*/
+.card_details_box h2 {
+    border: 1px solid #96b223;
+    padding: 10px;
+    margin: 0 0 20px;
+    color: #96b223;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.text_card_details_box {
+    font-size: 1.2rem;
+    line-height: 1.6em;
+    margin: 0 12px 20px;
+}
+
+.text_card_details_box a {
+    text-decoration: underline;
+    color: #666666;
+}
+
+.img_card_details_box {
+    text-align: center;
+    margin: 20px 12px 20px;
+}
+
+.card_details01 {
+    width: 237px;
+    height: auto;
+}
+
+.card_details04 {
+    width: 290px;
+    height: auto;
+}
+
+.card_details05 {
+    width: 90%;
+    height: auto;
+    margin: 20px 0 0;
+}
+
+.card_details07 {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+.card_details_table {
+    border-top: 1px solid #e6e6e6;
+    border-right: 1px solid #e6e6e6;
+    margin: 10px 0 20px;
+}
+
+.card_details_table th {
+    text-align: left;
+    border-left: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+    background: #f0f0f0;
+    width: 50%;
+    padding: 5px;
+}
+
+.card_details_table td {
+    text-align: left;
+    border-left: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 5px;
+}
+
+/*----card_flow----*/
+.flow_ico {
+    float: left;
+    width: 30%;
+    text-align: center;
+    padding: 10px 0 0;
+    box-sizing: border-box;
+}
+
+.flow_ico img {
+    width: 67px;
+    height: auto;
+}
+
+.flow_text {
+    float: right;
+    width: 68%;
+    padding: 0px 10px 25px 0;
+    box-sizing: border-box;
+}
+
+.flow_titile {
+    font-size: 1.8rem;
+    padding-left: 1.8rem;
+    text-indent: -1.8rem;
+}
+
+.flow_titile_end {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.btn_flow span {
+    display: block;
+    font-size: 1.6rem;
+    margin: 8px 0 15px 0;
+    padding: 5px 0px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.card_flow01 .btn_flow span {
+    background: #e60012;
+    border-radius: 5px;
+}
+
+.card_flow02 .btn_flow span {
+    background: #f39800;
+    border-radius: 5px;
+}
+
+.card_flow03 .btn_flow span {
+    background: #fdd000;
+    border-radius: 5px;
+}
+
+.card_flow04 .btn_flow span {
+    background: #f7ea76;
+    border-radius: 5px;
+    color: #7a6e00;
+}
+
+.btn_flow_end span {
+    display: block;
+    font-size: 1.6rem;
+    margin: 8px 20px 30px 20px;
+    padding: 5px 0px;
+    text-align: center;
+    color: #b8d447;
+    border-radius: 5px;
+    background: #ffffff;
+}
+
+.card_flow01 {
+    background: #ffffff;
+}
+
+.card_flow02,
+.card_flow04 {
+    background: url(../img/bg_flow_white.png) no-repeat top center #f0f0f0;
+    background-size: 22px auto;
+    padding: 25px 0 0 0;
+}
+
+.card_flow03 {
+    background: url(../img/bg_flow_gray.png) no-repeat top center #ffffff;
+    background-size: 22px auto;
+    padding: 25px 0 0 0;
+}
+
+.card_flow_end {
+    background: url(../img/bg_flow_gray.png) no-repeat top center #b8d447;
+    background-size: 22px auto;
+    padding: 25px 0 0 0;
+    height: 90px;
+    text-align: center;
+    position: relative;
+}
+
+.flow_ico_end {
+    position: absolute;
+    bottom: 0px;
+    right: 23px;
+    width: 96px;
+    height: auto;
+}
+
+/*----how_to----*/
+.how_to_head {
+    background: url(../img/logo_visa.png) no-repeat 20px 20px #f0f0f0;
+    background-size: 111px auto;
+    margin: -20px 0 30px 0;
+}
+
+.how_to_head_text {
+    float: left;
+    width: 40%;
+    font-size: 1.0rem;
+    text-align: center;
+    padding: 85px 0 40px;
+    box-sizing: border-box;
+}
+
+.how_to_head_read {
+    float: right;
+    width: 60%;
+    font-size: 1.2rem;
+    line-height: 1.5em;
+    padding: 40px 10px 0 0;
+    box-sizing: border-box;
+}
+
+.list_disc li {
+    list-style: disc;
+    margin: 0 0 10px 20px;
+}
+
+.img_howto {
+    width: 100%;
+    height: auto;
+}

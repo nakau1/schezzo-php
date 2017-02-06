@@ -1,0 +1,12 @@
+---
+- hosts: default
+  remote_user: vagrant
+  become: yes
+  roles:
+    - platform
+
+- hosts: default
+  remote_user: vagrant
+  become: no
+  roles:
+    - app

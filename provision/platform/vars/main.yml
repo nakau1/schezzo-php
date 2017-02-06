@@ -1,0 +1,13 @@
+---
+php:
+  timezone: Asia/Tokyo
+
+hosts:
+  ip: 127.0.0.1
+  names:
+    - "{{ domain }}"
+
+sites:
+    - name: "{{ domain }}"
+      root: "/var/www/schezzo/src/web"
+      log:  "/var/log/httpd"

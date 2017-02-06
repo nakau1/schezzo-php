@@ -1,0 +1,50 @@
+#panel-member-agreement {
+    font-size: 1.2rem;
+}
+
+#panel-consent-provision {
+    font-size: 1.2rem;
+}
+
+ol li {
+    list-style: decimal;
+    margin: 0 13px 0;
+}
+
+ul li {
+    list-style: disc;
+    margin: 0 13px 0;
+}
+
+.style-none {
+    list-style: none;
+}
+
+/* 条項見出し「第n条」 */
+.read_box p.provision-caption {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: 0 0 5px;
+}
+
+/* 条項内容 */
+.read_box div.provision-content {
+    margin: 0 0 20px;
+    font-size: 1.2rem;
+}
+
+/* 条項内段落 */
+.read_box p.provision-content {
+    margin: 0 0 5px;
+    font-size: 1.2rem;
+}
+
+/* 付属注意文 */
+.read_box p.caution {
+    font-size: 50%;
+}
+
+/* 条項内リスト */
+ol.provision-content-list {
+    padding-left: 1px;
+}

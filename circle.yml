@@ -1,0 +1,31 @@
+machine:
+  python:
+    version: 2.7.9
+dependencies:
+  pre:
+    - pip install awsebcli
+test:
+  override:
+    - exit 0
+deployment:
+  demo:
+    branch: develop
+    commands:
+      - eb deploy pollet-front-demo
+      - eb deploy pollet-api-demo
+      - eb deploy pollet-worker-demo
+      - ssh -p 22551 ec2-user@ec2-13-112-95-207.ap-northeast-1.compute.amazonaws.com /var/www/schezzo/deploy.sh -e develop
+      - ssh -p 22551 ec2-user@ec2-13-112-95-207.ap-northeast-1.compute.amazonaws.com cp -f /var/www/schezzo/environment/conf.demo.php /var/www/schezzo/environment/conf.php
+      - ssh -p 22551 ec2-user@ec2-13-112-95-207.ap-northeast-1.compute.amazonaws.com cp -f /var/www/schezzo/.ebextensions/MailboxHeader.php /var/www/schezzo/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/
+  test:
+    branch: test
+    commands:
+      - eb deploy pollet-front-test
+  prod:
+    branch: release
+    commands:
+      - eb deploy pollet-front-prod
+      - eb deploy pollet-worker-prod
+      - ssh -p 22551 ec2-user@ec2-13-112-74-6.ap-northeast-1.compute.amazonaws.com /var/www/schezzo/deploy.sh -e release
+      - ssh -p 22551 ec2-user@ec2-13-112-74-6.ap-northeast-1.compute.amazonaws.com cp -f /var/www/schezzo/environment/conf.prod.php /var/www/schezzo/environment/conf.php
+      - ssh -p 22551 ec2-user@ec2-13-112-74-6.ap-northeast-1.compute.amazonaws.com cp -f /var/www/schezzo/.ebextensions/MailboxHeader.php /var/www/schezzo/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/Headers/

@@ -1,0 +1,20 @@
+---
+- name: be sure hosts file correct
+  template: src=hosts.j2 dest=/etc/hosts backup=yes
+
+- service: name=mysqld state=started enabled=yes
+
+- name: be sure httpd.conf file correct
+  template: src=httpd.conf dest=/etc/httpd/conf/httpd.conf backup=yes
+
+- name: be sure SSL files are in /usr/local/etc/ssl
+  file: path=/usr/local/etc/ssl state=directory owner=root group=root mode=0755
+- copy: src=VAGRANT.crt dest=/usr/local/etc/ssl/VAGRANT.crt owner=root group=root mode=0644
+- copy: src=VAGRANT.csr dest=/usr/local/etc/ssl/VAGRANT.csr owner=root group=root mode=0644
+- copy: src=VAGRANT.key dest=/usr/local/etc/ssl/VAGRANT.key owner=root group=root mode=0644
+
+- name: Httpd restart and Service enabled
+  service: name=httpd state=restarted enabled=yes
+
+- name: memcached restart and Service enabled
+  service: name=memcached state=restarted enabled=yes

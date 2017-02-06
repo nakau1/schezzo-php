@@ -1,0 +1,5 @@
+version: 1
+cron:
+ - name: "push-notify-information-30min" # 設定変更時はnameも変更しないと反映されない模様
+   url: "/cron/notify-information"
+   schedule: "30 * * * *"
